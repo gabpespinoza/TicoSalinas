@@ -271,7 +271,7 @@ button {
 .hero__surname {
   font-family: var(--font-title);
   font-weight: 500;
-  font-size: clamp(2.rem, 5vw, 4rem);
+  font-size: clamp(2rem, 5vw, 4rem);
   letter-spacing: .14em;
   color: var(--teal);
 }
@@ -318,13 +318,13 @@ button {
 
 .hero__info {
   position: relative;
-  width: min(960px, 92%);
+  width: min(990px, 99%);
   margin: 2.5rem auto 0;
   transform: translateY(0);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  padding: 1rem 1.6rem;
+  padding: 1rem 1.5rem;
   border-radius: 22px 22px 0 0;
   background: rgba(214, 232, 245, .8);
   backdrop-filter: blur(6px);
@@ -334,22 +334,22 @@ button {
   display: flex;
   align-items: center;
   gap: .8rem;
-  padding: .3rem 1rem;
+  padding: .2rem 1rem;
 }
 
 .info-item+.info-item {
-  border-left: 1px solid rgba(10, 42, 107, .2);
+  border-left: 1px solid rgba(10, 42, 87, .2);
 }
 
 .info-item strong {
   display: block;
-  font-size: .72rem;
+  font-size: 1rem;
   color: var(--navy-2);
   font-weight: 600;
 }
 
 .info-item small {
-  font-size: .6rem;
+  font-size: .9rem;
   color: var(--muted);
   line-height: 1.3;
   display: block;
@@ -806,6 +806,34 @@ button {
 
 .office__map:hover {
   transform: scale(1.04);
+}
+
+* Contenedor principal de la tarjeta */
+.office {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  max-width: 650px; /* Ajusta según el ancho de tu diseño */
+}
+
+/* Ajuste para el texto */
+.office__info {
+  flex: 1;
+}
+
+/* Estilos específicos para la miniatura del mapa */
+.office__map {
+  width: 220px; /* Ancho idéntico al de la imagen */
+  height: 150px; /* Alto idéntico al de la imagen */
+  border-radius: 12px;
+  overflow: hidden; /* Corta los bordes rectos del iframe */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Sombra suave para el mapa */
+  flex-shrink: 0; /* Evita que el mapa se deforme en pantallas pequeñas */
 }
 
 .pin {

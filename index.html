@@ -20,12 +20,10 @@
 
   <!-- ============ HEADER ============ -->
   <header class="header" id="header">
-    <a href="#inicio" class="header__logo" aria-label="Inicio">
-      <svg viewBox="0 0 64 64" width="38" height="38" fill="none" stroke="#12b5a5" stroke-width="3"
-        stroke-linecap="round" stroke-linejoin="round">
-        <path d="M10 30c0-12 10-20 24-20 6 0 10 2 12 6-8 0-10 8-10 14 0 10-6 18-14 18-8 0-12-8-12-18z" />
-        <path d="M30 22c4 2 8 6 8 12M38 44c6 0 12-4 14-10" />
-      </svg>
+    <a href="#inicio" class="header__logo" aria-label="Inicio" style="display: inline-block; max-width: 120px;">
+      <img src="assets/logo-hero.webp" alt="Logo Dr. Salinas" width="120"
+        style="width: 100%; height: auto; max-height: 40px; object-fit: contain;"
+        onerror="this.style.display='none';this.parentElement.classList.add('is-empty')" />
     </a>
     <nav class="header__nav" id="nav">
       <a href="#servicios">Mis Servicios</a>
@@ -34,7 +32,6 @@
     </nav>
     <button class="header__burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
   </header>
-
   <main>
     <!-- ============ HERO ============ -->
     <section class="hero" id="inicio">
@@ -307,14 +304,18 @@
                   <div><strong>Email</strong><small>ticosalinast@gmail.com</small></div>
                 </li>
                 <li><span class="ico">📍</span>
-                  <div><strong>Ubicación</strong><small>Calle Tupac Amaru # 1657, Piso 4, Hospital Univalles</small><a
+                  <div><strong>Ubicación</strong><small>Calle Tupac Amaru # 1657, Piso 4, Hospital Univalle</small><a
                       href="https://maps.app.goo.gl/JLnSsDXXQrQzz1wG9" target="_blank" rel="noopener">Ver en Google Maps
                       ↗</a></div>
                 </li>
               </ul>
             </div>
-            <a class="office__map" href="https://maps.app.goo.gl/JLnSsDXXQrQzz1wG9" target="_blank" rel="noopener"
-              aria-label="Abrir mapa Cochabamba"><span class="pin"></span></a>
+            <!-- Bloque de la Miniatura del Mapa -->
+            <div class="office__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108047.45777889653!2d-66.300600479479!3d-17.371428799999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e37565a9ed9b05%3A0x69bae1881ddc7952!2sDr.%20Walter%20Fabricio%20Salinas%20-%20Cirug%C3%ADa%20Laparosc%C3%B3pica%20y%20Abdominal!5e1!3m2!1ses!2sbo!4v1791841056696!5m2!1ses!2sbo"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
           </article>
 
           <article class="office reveal" style="--d:.2s">
