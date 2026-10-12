@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Tico Salinas | Cirugía Laparoscópica Avanzada & Trasplantes</title>
+  <meta name="description"
+    content="Cirugía oncológica y trasplante de órganos abdominales. Subespecialista en cirugía de hígado, vesícula, vías biliares y páncreas." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <a href="#inicio" class="header__logo" aria-label="Inicio">
+      <svg viewBox="0 0 64 64" width="38" height="38" fill="none" stroke="#12b5a5" stroke-width="3"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10 30c0-12 10-20 24-20 6 0 10 2 12 6-8 0-10 8-10 14 0 10-6 18-14 18-8 0-12-8-12-18z" />
+        <path d="M30 22c4 2 8 6 8 12M38 44c6 0 12-4 14-10" />
+      </svg>
+    </a>
+    <nav class="header__nav" id="nav">
+      <a href="#servicios">Mis Servicios</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="header__burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" data-parallax="0.15"></div>
+
+      <div class="hero__inner">
+        <div class="hero__content">
+          <div class="hero__brand reveal" style="--d:.1s">
+
+            <!-- ► ESPACIO PARA TU IMAGEN (isotipo del logo) -->
+            <div class="hero__mark">
+              <img src="assets/logo-hero.webp" alt="Logo Dr. Salinas"
+                onerror="this.style.display='none';this.parentElement.classList.add('is-empty')" />
+            </div>
+
+            <div class="hero__name">
+              <span class="hero__dr">Dr. Tico</span>
+              <span class="hero__surname">SALINAS</span>
+            </div>
+          </div>
+
+          <h1 class="hero__title reveal" style="--d:.35s">Cirugía Laparoscópica Avanzada &amp; Trasplantes.</h1>
+          <p class="hero__text reveal" style="--d:.35s">
+            Cirugía oncológica y trasplante de órganos abdominales
+            <br />
+            Subespecialista en Cirugía de Hígado, Vesícula, vías biliares y Páncreas
+          </p>
+
+          <div class="hero__actions reveal" style="--d:.45s">
+            <a href="https://wa.me/59171633743" class="btn btn--primary" target="_blank" rel="noopener">
+              <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor">
+                <path
+                  d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.4.7 4.7 1.9 6.6L3 29l7.2-2.3c1.8 1 3.8 1.5 5.8 1.5 7 0 12.6-5.6 12.6-12.5S23 3 16 3zm5.7 15.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1a8.3 8.3 0 0 1-4.1-3.6c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.2 3.4 5.3 4.7 2 .8 2.7.9 3.7.7.6-.1 1.8-.7 2.1-1.5.3-.7.3-1.3.2-1.5 0-.1-.3-.2-.6-.4z" />
+              </svg>
+              Agendar por WhatsApp
+            </a>
+            <a href="#servicios" class="btn btn--outline">Conocer mis servicios</a>
+          </div>
+        </div>
+
+        <figure class="hero__photo reveal reveal--scale" style="--d:.3s" data-parallax="-0.08">
+          <img src="assets/dr-walter-salinas-hero.webp" alt="Dr. Walter Fabricio Salinas"
+            onerror="this.style.display='none'" />
+        </figure>
+      </div>
+
+      <!-- Barra de información -->
+      <div class="hero__info reveal" style="--d:.6s">
+        <div class="info-item">
+          <svg viewBox="0 0 24 24" width="35" height="28" fill="none" stroke="#0a2a6b" stroke-width="1.6"
+            stroke-linecap="round">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z" />
+          </svg>
+          <div><strong>Atención personalizada</strong><small>Escucharte también es parte del tratamiento.</small></div>
+        </div>
+        <div class="info-item">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0a2a6b" stroke-width="1.6"
+            stroke-linecap="round">
+            <path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z" />
+            <circle cx="12" cy="10" r="2.5" />
+          </svg>
+          <div><strong>Cochabamba y Santa Cruz</strong><small>Te acompaño donde me necesites.</small></div>
+        </div>
+        <div class="info-item info-item--ogma">
+
+          <!-- ► ESPACIO PARA TU IMAGEN (logo OGMA) -->
+          <div class="ogma-logo">
+            <img src="assets/logo-ogma.svg" alt="OGMA logo"
+              onerror="this.style.display='none';this.parentElement.classList.add('is-empty')" />
+          </div>
+
+          <div><strong>Miembro de OGMA</strong><small>Cirujanos expertos. Mejores vidas.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="services" id="servicios">
+      <div class="container">
+        <h2 class="section-title reveal"><span>Mis Servicios</span></h2>
+        <p class="section-subtitle reveal" style="--d:.1s">Soluciones quirúrgicas avanzadas para una mejor calidad de
+          vida</p>
+
+        <div class="services__grid">
+
+          <!-- Tarjeta 1 · Cirugía HPB -->
+          <article class="card reveal" style="--d:.1s">
+            <div class="card__main">
+              <div class="card__icon">
+                <img src="assets/higado-servicios-1.svg" alt=""
+                  onerror="this.style.display='none';this.parentElement.classList.add('is-empty')" />
+              </div>
+              <div class="card__body">
+                <h3>Cirugía HPB</h3>
+                <p>Cirugía de hígado, vías biliares y páncreas con enfoque mínimamente invasivo y de alta complejidad.
+                </p>
+                <button type="button" class="card__link" aria-expanded="false" aria-controls="more-hpb">
+                  <span>Conocer más</span><span class="arrow" aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+            <div class="card__more" id="more-hpb">
+              <div>
+                <ul>
+                  <li>Cirugía laparoscópica de la pared abdominal</li>
+                  <li>Cirugía estética de la pared abdominal por diástasis de los rectos. Técnica MILA</li>
+                  <li>Cirugía laparoscópica de páncreas</li>
+                  <li>Cirugía adrenal laparoscópica</li>
+                  <li>Cirugía de vesícula, apéndice, intestino delgado laparoscópica</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta 2 · Trasplantes -->
+          <article class="card reveal" style="--d:.2s">
+            <div class="card__main">
+              <div class="card__icon">
+                <img src="assets/trasplantes.svg" alt="icon de trasplantes abdominales"
+                  onerror="this.style.display='none';this.parentElement.classList.add('is-empty')" />
+              </div>
+              <div class="card__body">
+                <h3>Trasplantes</h3>
+                <p>Trasplante de hígado y de órganos abdominales, con estándares internacionales de seguridad.</p>
+                <button type="button" class="card__link" aria-expanded="false" aria-controls="more-trasplantes">
+                  <span>Conocer más</span><span class="arrow" aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+            <div class="card__more" id="more-trasplantes">
+              <div>
+                <ul>
+                  <li>Trasplante Hepático</li>
+                  <li>Trasplante Reno pancreático</li>
+                  <li>Trasplante Renal</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta 3 · Oncología abdominal -->
+          <article class="card reveal" style="--d:.1s">
+            <div class="card__main">
+              <div class="card__icon">
+                <img src="assets/oncologia.svg" alt=""
+                  onerror="this.style.display='none';this.parentElement.classList.add('is-empty')" />
+              </div>
+              <div class="card__body">
+                <h3>Oncología abdominal</h3>
+                <p>Diagnóstico y tratamiento quirúrgico de tumores del hígado, páncreas y tracto digestivo.</p>
+                <button type="button" class="card__link" aria-expanded="false" aria-controls="more-oncologia">
+                  <span>Conocer más</span><span class="arrow" aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+            <div class="card__more" id="more-oncologia">
+              <div>
+                <ul>
+                  <li>HIPEC</li>
+                  <li>Cirugía de ganglio centinela y manejo integral de melanoma</li>
+                  <li>Resecciones multiviscerales complejas oncológicas y exenteraciones pélvicas</li>
+                  <li>Cirugía de endometriosis con compromiso intestinal</li>
+                  <li>Colectomías y resección anterior baja laparoscópica</li>
+                  <li>Cirugía oncológica de cáncer gástrico</li>
+                  <li>Hepatectomía laparoscópica</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta 4 · Segunda opinión -->
+          <article class="card reveal" style="--d:.2s">
+            <div class="card__main">
+              <div class="card__icon">
+                <img src="assets/segunda-opinion.svg" alt=""
+                  onerror="this.style.display='none';this.parentElement.classList.add('is-empty')" />
+              </div>
+              <div class="card__body">
+                <h3>Segunda opinión</h3>
+                <p>Revisión de casos complejos y orientación especializada, presencial o por telemedicina.</p>
+                <button type="button" class="card__link" aria-expanded="false" aria-controls="more-segunda">
+                  <span>Conocer más</span><span class="arrow" aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+            <div class="card__more" id="more-segunda">
+              <div>
+                <ul>
+                  <li>Cirugía bariátrica</li>
+                  <li>Video consultas</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="about" id="sobre-mi">
+      <div class="container about__inner">
+
+        <!-- ► CARRUSEL AUTOMÁTICO
+             Para agregar más slides, duplica un bloque <div class="carousel__slide">…</div>
+             Imágenes recomendadas: vertical 4:5 (ej. 800×1000 px) -->
+        <figure class="about__photo reveal reveal--left" data-carousel aria-roledescription="carrusel"
+          aria-label="Galería del Dr. Salinas">
+          <div class="carousel__track">
+            <div class="carousel__slide">
+              <img src="assets/sobre-mi-dr-1 (1).webp" alt="Imagen del dr Walter Salinas en quirófano"
+                onerror="this.style.display='none'" />
+            </div>
+            <div class="carousel__slide">
+              <img src="assets/sobre-mi-dr-2 (1).webp" alt="Imagen del dr Walter Salinas en cirugia de vesícula"
+                onerror="this.style.display='none'" />
+            </div>
+            <div class="carousel__slide">
+              <img src="assets/sobre-mi-dr-3 (1).webp" alt="Imagen del dr Walter Salinas en cirugia de apéndice"
+                onerror="this.style.display='none'" />
+            </div>
+          </div>
+
+          <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Imagen anterior">‹</button>
+          <button type="button" class="carousel__btn carousel__btn--next" aria-label="Imagen siguiente">›</button>
+          <div class="carousel__dots" role="tablist"></div>
+        </figure>
+
+        <div class="about__content">
+          <span class="about__eyebrow reveal">SOBRE MÍ</span>
+          <h2 class="about__title reveal" style="--d:.1s">Conoce al Dr Walter <br>Fabricio Salinas</br></h2>
+          <h3 class="about__role reveal" style="--d:.15s">Cirugía Hepatobiliopancreática, Oncológica y Trasplantes</h3>
+          <p class="about__text reveal" style="--d:.2s">
+            Especialista en cirugía laparoscópica de alta complejidad, patologías del tracto digestivo y trasplante de
+            órganos abdominales.
+            Egresado de la Universidad Nacional de Córdoba (Argentina), con entrenamiento avanzado en centros de
+            excelencia mundial
+            como el King's College Hospital de Londres y el Instituto IRCAD de Francia.
+          </p>
+          <ul class="about__list reveal" style="--d:.3s">
+            <li>Subespecialidad en Trasplantes &amp; HPB (UNC, Argentina)</li>
+            <li>Entrenamiento Internacional (Londres y Francia)</li>
+            <li>OGMA Cirujanos Expertos</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about__actions reveal">
+        <a href="assets/servicios.pdf" class="btn btn--dark" download>Pdf · Mis servicios</a>
+        <button class="btn btn--dark" id="shareBtn" type="button">Compartir</button>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact" id="contacto">
+      <div class="container">
+        <h2 class="section-title section-title--teal reveal">Contacto</h2>
+        <p class="contact__subtitle reveal" style="--d:.1s">Te brindo consulta presencial en Cochabamba y Santa Cruz</p>
+
+        <div class="contact__grid">
+          <article class="office reveal" style="--d:.1s">
+            <div class="office__info">
+              <h3>Cochabamba</h3>
+              <ul>
+                <li><span class="ico">📞</span>
+                  <div><strong>Teléfono</strong><small>+591 - 71 - 633 - 743</small></div>
+                </li>
+                <li><span class="ico">✉️</span>
+                  <div><strong>Email</strong><small>ticosalinast@gmail.com</small></div>
+                </li>
+                <li><span class="ico">📍</span>
+                  <div><strong>Ubicación</strong><small>Calle Tupac Amaru # 1657, Piso 4, Hospital Univalles</small><a
+                      href="https://maps.app.goo.gl/JLnSsDXXQrQzz1wG9" target="_blank" rel="noopener">Ver en Google Maps
+                      ↗</a></div>
+                </li>
+              </ul>
+            </div>
+            <a class="office__map" href="https://maps.app.goo.gl/JLnSsDXXQrQzz1wG9" target="_blank" rel="noopener"
+              aria-label="Abrir mapa Cochabamba"><span class="pin"></span></a>
+          </article>
+
+          <article class="office reveal" style="--d:.2s">
+            <div class="office__info">
+              <h3>Santa Cruz</h3>
+              <ul>
+                <li><span class="ico">📞</span>
+                  <div><strong>Teléfono</strong><small>+591 - 71 - 633 - 743</small></div>
+                </li>
+                <li><span class="ico">✉️</span>
+                  <div><strong>Email</strong><small>ticosalinast@gmail.com</small></div>
+                </li>
+                <li><span class="ico">📍</span>
+                  <div><strong>Ubicación</strong><small>Avenida Sexto Anillo esq, Av. Prolongacion Beni 5100</small><a
+                      href="https://maps.app.goo.gl/karJbDD1hepMd5cFA" target="_blank" rel="noopener">Ver en Google Maps
+                      ↗</a></div>
+                </li>
+              </ul>
+            </div>
+            <a class="office__map" href="https://maps.app.goo.gl/karJbDD1hepMd5cFA" target="_blank" rel="noopener"
+              aria-label="Abrir mapa Santa Cruz"><span class="pin"></span></a>
+          </article>
+        </div>
+
+        <div class="contact__notes">
+          <p class="reveal"><em><strong>• Disponibilidad de Emergencias:</strong> Cobertura de urgencias quirúrgicas las
+              24 horas, los 7 días de la semana en los centros médicos autorizados.</em></p>
+          <p class="reveal" style="--d:.1s"><em><strong>• Coordinación de citas</strong> y turnos disponibles
+              directamente a través de WhatsApp.</em></p>
+        </div>
+
+        <div class="contact__cta reveal">
+          <a href="https://wa.me/59171633743" target="_blank" rel="noopener" class="btn btn--dark btn--lg">Agenda tu
+            consulta de valoración</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REDES ============ -->
+    <section class="social">
+      <h2 class="reveal">MIS REDES SOCIALES</h2>
+      <div class="social__icons reveal" style="--d:.15s">
+        <a href="https://www.facebook.com/Dr.Tico.Salinas.Cirujano" aria-label="Facebook"><svg viewBox="0 0 24 24"
+            width="20" height="20" fill="#fff">
+            <path
+              d="M14 8V6.5c0-.7.2-1.2 1.3-1.2H17V2.3C16.7 2.2 15.7 2 14.5 2 12 2 10.3 3.500 10.300 6.200V8H7.500v3.300h2.800V22H14V11.300h2.700L17.100 8z" />
+          </svg></a>
+        <a href="https://www.instagram.com/dr.tico_salinas" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20"
+            height="20" fill="none" stroke="#fff" stroke-width="2">
+
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" fill="#fff" />
+          </svg></a>
+        <a href="https://www.tiktok.com/@dr.tico.salinas_o" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff">
+            <path
+              d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.01 1.63 4.15.93.99 2.21 1.62 3.58 1.8v3.91c-1.48-.06-2.93-.61-4.09-1.56-.37-.3-.7-.64-.99-1.01v6.92c0 2.24-.78 4.41-2.26 6.06-1.52 1.65-3.71 2.58-5.96 2.53-2.85-.05-5.46-1.92-6.3-4.63-.99-3.1.58-6.52 3.59-7.79.84-.36 1.76-.53 2.68-.51v3.94c-1.63.02-3.13 1.12-3.59 2.68-.58 1.94.39 4.09 2.25 4.81 1.69.67 3.69.1 4.74-1.37.5-.68.74-1.52.74-2.36V0h.06z" />
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/59171633743" class="wa-float" target="_blank" rel="noopener"
+    aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff">
+      <path
+        d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.4.7 4.7 1.9 6.6L3 29l7.2-2.3c1.8 1 3.8 1.5 5.8 1.5 7 0 12.6-5.6 12.6-12.5S23 3 16 3zm5.7 15.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1a8.3 8.3 0 0 1-4.1-3.6c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.2 3.4 5.3 4.7 2 .8 2.7.9 3.7.7.6-.1 1.8-.7 2.1-1.5.3-.7.3-1.3.2-1.5 0-.1-.3-.2-.6-.4z" />
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
