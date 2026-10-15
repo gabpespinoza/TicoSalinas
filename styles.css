@@ -728,7 +728,7 @@ button {
 .contact__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.6rem;
+  gap: 1.5rem;
 }
 
 .office {
@@ -793,8 +793,8 @@ button {
 
 .office__map {
   position: relative;
-  height: 150px;
-  border-radius: 10px;
+  height: 120px;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
   background:
@@ -829,7 +829,7 @@ button {
 /* Estilos específicos para la miniatura del mapa */
 .office__map {
   width: 220px; /* Ancho idéntico al de la imagen */
-  height: 150px; /* Alto idéntico al de la imagen */
+  height: 290px; /* Alto idéntico al de la imagen */
   border-radius: 12px;
   overflow: hidden; /* Corta los bordes rectos del iframe */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Sombra suave para el mapa */
