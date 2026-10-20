@@ -7,7 +7,7 @@
   <title>Dr. Tico Salinas | Cirugía Laparoscópica Avanzada & Trasplantes</title>
   <meta name="description"
     content="Cirugía oncológica y trasplante de órganos abdominales. Subespecialista en cirugía de hígado, vesícula, vías biliares y páncreas." />
-<link rel="icon" type="image/png" href="assets/Favicon-tico-salinas2.png">
+  <link rel="icon" type="image/png" href="assets/Favicon-tico-salinas2.png">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -347,15 +347,15 @@
 
         <div class="contact__notes">
           <p class="reveal"><strong>• Disponibilidad de Emergencias:</strong> Cobertura de urgencias quirúrgicas las
-              24 horas, los 7 días de la semana en los centros médicos autorizados.</p>
+            24 horas, los 7 días de la semana en los centros médicos autorizados.</p>
 
           <p class="reveal" style="--d:.1s"><strong>• Atención Médica a Distancia (Telehealth):</strong> Servicio de
-              teleconsultas disponible para evaluaciones iniciales, seguimiento y orientación médica especializada sin
-              importar tu ubicación.
-            </p>
+            teleconsultas disponible para evaluaciones iniciales, seguimiento y orientación médica especializada sin
+            importar tu ubicación.
+          </p>
 
           <p class="reveal" style="--d:.1s"><strong>• Coordinación de citas</strong> y turnos disponibles
-              directamente a través de WhatsApp.</p>
+            directamente a través de WhatsApp.</p>
         </div>
 
         <div class="contact__cta reveal">
@@ -415,7 +415,26 @@
     </svg>
   </a>
 
-  <script src="script.js"></script>
+     <!-- Botón flotante superior derecho del QR -->
+<button id="qr-float-btn" aria-label="Mostrar código QR">
+  <!-- Muestra una versión miniatura del código QR real -->
+  <img src="assets/qr-tico salinas-opt.webp" alt="Icono QR - tico_salinas" class="qr-btn-icon">
+</button>
+
+<!-- Overlay / Modal flotante para el QR -->
+<div id="qr-modal-overlay" class="qr-overlay-hidden">
+  <div class="qr-modal-card">
+    <button id="qr-modal-close" aria-label="Cerrar">&times;</button>
+    <h3>Escanea mi vCard</h3>
+    <div class="qr-image-wrapper">
+      <img src="assets/qr-tico salinas-opt.webp" alt="Código QR vCard Dr. Tico Salinas" id="qr-code-img">
+    </div>
+  </div>
+</div>
+  
+
+  <script src="script.js" defer></script>
+  
 </body>
 
 </html>

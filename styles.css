@@ -202,8 +202,7 @@ button {
   inset: -40px 0 0 0;
   background:
     radial-gradient(circle at 20% 30%, rgba(255, 255, 255, .9), transparent 45%),
-    radial-gradient(circle at 80% 20%, rgba(160, 200, 225, .45), transparent 50%),
-    url("assets/hero-bg.jpg") center/cover;
+    radial-gradient(circle at 80% 20%, rgba(160, 200, 225, .45), transparent 50%);
   opacity: .55;
   filter: blur(2px);
   will-change: transform;
@@ -918,6 +917,109 @@ button {
   animation: pulse 2.4s infinite;
 }
 
+/* ================BOTON QR FLOTABTE================*/
+.qr-btn-icon {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+}
+
+#qr-float-btn {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  z-index: 999;
+  background-color: #ffffff; /* Fondo blanco para destacar el QR negro */
+  color: #1a202c;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#qr-float-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+#qr-modal-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(5px);
+  z-index: 999999 !important; /* Capa por encima de todo el header y contenido */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: opacity 0.3s ease;
+}
+
+/* Estado oculto que aplica cuando tiene la clase qr-overlay-hidden */
+#qr-modal-overlay.qr-overlay-hidden {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Tarjeta Flotante Interna */
+.qr-modal-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 25px;
+  text-align: center;
+  max-width: 360px;
+  width: 85%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 1000000 !important;
+}
+
+/* Botón de Cierre (X) */
+#qr-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* Título */
+.qr-modal-card h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.15rem;
+  color: #1a202c;
+  font-family: inherit;
+}
+
+/* Imagen dentro del modal */
+.qr-image-wrapper img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, .55);
@@ -931,6 +1033,7 @@ button {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
 }
+
 
 /* ============ ANIMACIONES SCROLL ============ */
 .reveal {
@@ -957,6 +1060,9 @@ button {
 .hero__photo.reveal.is-visible {
   transform: translateY(var(--py, 0px));
 }
+
+
+
 
 /* ============ RESPONSIVE ============ */
 @media (max-width: 900px) {

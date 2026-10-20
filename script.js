@@ -147,3 +147,34 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (e) { /* el usuario canceló */ }
   });
 });
+
+ /* ---------- 7. Botón qr para compartir ---------- */
+document.addEventListener('DOMContentLoaded', () => {
+  const qrBtn = document.getElementById('qr-float-btn');
+  const qrOverlay = document.getElementById('qr-modal-overlay');
+  const qrClose = document.getElementById('qr-modal-close');
+
+  if (qrBtn && qrOverlay) {
+    // Abrir modal
+    qrBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      qrOverlay.classList.remove('qr-overlay-hidden');
+    });
+
+    // Cerrar modal con el botón X
+    if (qrClose) {
+      qrClose.addEventListener('click', () => {
+        qrOverlay.classList.add('qr-overlay-hidden');
+      });
+    }
+
+    // Cerrar modal haciendo clic en el fondo del overlay
+    qrOverlay.addEventListener('click', (e) => {
+      if (e.target === qrOverlay) {
+        qrOverlay.classList.add('qr-overlay-hidden');
+      }
+    });
+  } else {
+    console.error('No se encontraron los elementos del QR en el DOM.');
+  }
+});
